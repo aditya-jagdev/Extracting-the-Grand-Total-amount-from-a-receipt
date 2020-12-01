@@ -3,7 +3,9 @@
 ### Problem Statement
 * Using OCR to automate extracting of total amounts for receipts.
 * This would help in book-keeping and save man hours in manually verifying and noting the receipt values.
-* This leaves no room for human error. The only constraint here is that pictures need to be of a higher resolution.
+* This leaves no room for human error. BUt here are some limitations the current solution has.
+* The pictures need to be high resolution, such that the smallest white line separating text should be atleast 4px wide.
+* Some fonts work better than others.
 
 ## Current Pitfalls and future scope
 * The Tesseract OCR API fails to distinguish between 6 and &. This leads to many entries such as '$1.00' to be misinterpreted as '61.00'.
