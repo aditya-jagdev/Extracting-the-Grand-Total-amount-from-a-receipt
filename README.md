@@ -9,9 +9,9 @@
 
 ### Solution Overview
 * Adaptive gaussian thresholding was used to preprocess images into a more usable format for the API.
-* Images were aligned using a CNN to minimize errors while passing the images for OCR.
 * Tesseract OCR API parameters were tweaked to achieve an R<sup>2</sup> score of 0.91. 
 
 ## Current Pitfalls and future scope
 * The Tesseract OCR API fails to distinguish between 6 and &. This leads to many entries such as '$1.00' to be misinterpreted as '61.00'.
+* Image alignment and cropping can be improved using CNNs to minimize errors while passing the images for OCR.
 * A CNN model may prove useful in correcting the final values. The idea is that it will capture the neighbouring data points and detect outliers ($1 as 61).
