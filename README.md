@@ -3,7 +3,7 @@
 ### Problem Statement
 * Using OCR to automate extracting of total amounts for receipts.
 * This would help in book-keeping and save man hours in manually verifying and noting the receipt values.
-* This leaves no room for human error. BUt here are some limitations the current solution has.
+* This leaves no room for human error. But here are some limitations the current solution has.
 * The pictures need to be high resolution, such that the smallest white line separating text should be atleast 4px wide.
 * Some fonts work better than others.
 
